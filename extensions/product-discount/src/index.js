@@ -38,6 +38,7 @@ export default /**
   }
 
   const targets = input.cart.lines
+
     // Only include cart lines with a quantity of two or more
     // and a targetable product variant
     .filter(
@@ -53,6 +54,8 @@ export default /**
         },
       });
     });
+
+    
 
   if (!targets.length) {
     // You can use STDERR for debug logs in your function
